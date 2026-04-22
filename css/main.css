@@ -1,0 +1,42 @@
+.dark-mode {
+  background-color: #121212; /* Deep Black */
+  color: #FFFFFF; /* Accent White */
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.neumorphism {
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), 
+              -5px -5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+h1, h2, h3, p {
+  font-family: 'Inter', sans-serif;
+}
+
+.button {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #0f4c75; /* Glow Blue */
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
